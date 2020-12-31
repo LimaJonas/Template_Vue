@@ -1,11 +1,18 @@
 <template>
     <div class="app">
-        <h2>Teste</h2>
-        <router-link
-            tag="button"
-            :to="{ name: 'HelloWorld' }"
-          >
-            Hello
-          </router-link>  
+        <Navbar />
+        <Home />
     </div>
 </template>
+
+<script>
+import Navbar from "@/components/Navbar";
+import Home from "@/components/Home";
+
+export default {
+    components: {
+        Navbar,
+        Home,
+    }
+}
+</script>
