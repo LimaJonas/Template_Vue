@@ -8,6 +8,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><router-link :to="{ name: 'Home' }"><a class="nav-link js-scroll-trigger">Home</a></router-link></li>
                     <li class="nav-item"><router-link :to="{ name: 'Services' }"><a class="nav-link js-scroll-trigger">Services</a></router-link></li>
                     <li class="nav-item"><router-link :to="{ name: 'Portfolio' }"><a class="nav-link js-scroll-trigger">Portfolio</a></router-link></li>
                     <li class="nav-item"><router-link :to="{ name: 'About' }"><a class="nav-link js-scroll-trigger">About</a></router-link></li>
