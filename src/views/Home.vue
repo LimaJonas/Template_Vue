@@ -3,6 +3,9 @@
         <Navbar />
         <Home />
         <Services />
+        <Portfolio />
+        <PortfolioModal />
+        <About />
         <Footer />
     </div>
 </template>
@@ -11,6 +14,9 @@
 import Navbar from "@/components/Navbar";
 import Home from "@/components/Home";
 import Services from "@/components/Services";
+import Portfolio from "@/components/Portfolio";
+import PortfolioModal from "@/components/PortfolioModal";
+import About from "@/components/About";
 import Footer from "@/components/Footer";
 
 export default {
@@ -18,6 +24,9 @@ export default {
         Navbar,
         Home,
         Services,
+        Portfolio,
+        PortfolioModal,
+        About,
         Footer
     }
 }
