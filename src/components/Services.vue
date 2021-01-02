@@ -1,4 +1,6 @@
 <template>
+<div>
+    <Navbar />
     <section class="page-section" id="services">
         <div class="container">
             <div class="text-center">
@@ -33,4 +35,19 @@
             </div>
         </div>
     </section>
+    <Footer />
+</div>
 </template>
+
+<script>
+import Navbar from "@/components/Navbar.vue";
+import Footer from '@/components/Footer.vue';
+
+export default {
+    components: {
+        Navbar,
+        Footer
+    }
+}
+        Footer
+</script>

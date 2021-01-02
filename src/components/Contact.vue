@@ -1,5 +1,7 @@
 <template>
-    <section class="page-section" id="contact">
+    <div>
+        <Navbar />
+        <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
@@ -35,10 +37,23 @@
                 </form>
             </div>
         </section>
+        <Footer />
+    </div>
 </template>
 
-<style>
+<script>
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
 
+export default {
+    components: {
+        Navbar,
+        Footer
+    }
+}
+</script>
+
+<style>
 section#contact {
   background-image: url("../assets/map-image.png");
 }

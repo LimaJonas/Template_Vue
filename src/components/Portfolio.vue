@@ -1,5 +1,7 @@
 <template>
-    <section class="page-section bg-light" id="portfolio">
+    <div>
+        <Navbar />
+        <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
@@ -12,7 +14,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="@/assets/portfolio/01-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Threads</div>
@@ -26,7 +28,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="@/assets/portfolio/02-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Explore</div>
@@ -40,7 +42,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                                <img class="img-fluid" src="@/assets/portfolio/03-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Finish</div>
@@ -93,4 +95,21 @@
                 </div>
             </div>
         </section>
+        <PortfolioModal />
+        <Footer />
+    </div>
 </template>
+
+<script>
+import Navbar from "@/components/Navbar.vue";
+import PortfolioModal from "@/components/PortfolioModal.vue";
+import Footer from "@/components/Footer.vue";
+
+export default {
+    components: {
+        Navbar,
+        PortfolioModal,
+        Footer
+    }
+}
+</script>
